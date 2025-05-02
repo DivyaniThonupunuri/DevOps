@@ -1,0 +1,39 @@
+signin with free account with basic service plans . Remember always to terminate any kind of service creatred to avoid unneccesary charges .
+
+EC2 (Elastic cloud compute) - Its a virtual server
+
+Types of ec2 instances
+General purpose
+compute optimised
+Memory optimised
+Storage optimised
+Acclerated 
+
+To launch the ec2 instance 
+
+1. create key pair
+2. create firewall (security group and inbound rule)
+3. import public key to aws account
+4. create server and attach public key
+5. attach firewall to server
+
+Import a key pair 
+
+Run this in any of the terminal(git bash , putty , superputty , mobixtrem)
+ssh-keygen -f <filename>
+ssh-keygen -f key - this creates key.pub file and also a key folder(key and key.pub)
+
+Create security group and inbound rule 
+Inbound rule : Allow all traffic with IPv4 anywhere
+Security group : Allow All ports 
+
+Launch the instance - instance will be in running state (It has 2 IP address : 1 public address and 1 private address )
+
+connect to servers 
+
+Move to the path , where key pair is gerenated 
+ ssh -i <private key> user@IP
+ ssh -i key ec2-user@public IP
+
+
+
