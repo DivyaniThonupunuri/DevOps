@@ -1,4 +1,8 @@
 Linux 
+Linux is a kernal , we have multiple OS on top of the kernal .
+Kernal is the heart and brain of the OS ,OS always interacts with the Hardware. 
+We have multiple flavours of OS  like Redhat, Ubuntu, centos, fedore, suse, oracle linux, amazon linux, debian, rocky linux, kali, solaris
+Kernel + UI == OS
 
 Open source
 Highly Secure
@@ -7,3 +11,6 @@ installation  or updating packages is quite easy
 community support is avialble (RHEL)
 low resources
 Frequent restarts are not required 
+
+Basic linux command used in daily tasks 
+
