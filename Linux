@@ -14,3 +14,83 @@ Frequent restarts are not required
 
 Basic linux command used in daily tasks 
 
+$ - normal user 
+# - root /super user 
+cat > <file-name> --> type text, enter and ctrl+d ,previous content will be replaced
+cat >> <file-name> --> appends text to previous content
+PrincetonBlue@LAPTOP-0CIL100C MINGW64 /D/Divyani
+$ cat > div
+hello
+how are you
+
+PrincetonBlue@LAPTOP-0CIL100C MINGW64 /D/Divyani
+$ cat >> div
+i am able to clear interviews
+
+
+PrincetonBlue@LAPTOP-0CIL100C MINGW64 /D/Divyani
+$ cat div
+hello
+how are you
+i am able to clear interviews
+
+wget <URL> - To download the  content of file
+curl <URL> --> displays content on the screen
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1
+
+ echo https://joindevops/login | cut -d "/" -f1
+https:
+
+awk command
+------------
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
+
+$ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $3F}'
+raw.githubusercontent.com
+
+Url is divided into fragments 
+https -f1
+// - f2
+raw.githubusercontent.com - f3
+daws-84s - f3
+notes - f4
+
+VIM EDITOR
+
+vim editor
+
+CAT >
+CAT >>
+
+vim <file-name>
+
+3 MODEs
+Esc, Colon, insert MODEs
+
+command MODE
+==============
+:q -> quit the file
+:wq --> write and quit
+:wq! --> force write and quit
+:q! --> exit without saving
+:/<word-search> --> search the word from top
+:?<word-search> --> search  the word from bottom
+:noh --> no highlight
+:27 d --> delete 27th line
+:%d --> total content will be deleted
+:3s/sbin/SBIN --> in 3rd line first occurence of sbin will be replaced with SBIN
+:3s/sbin/SBIN/g --> all occurence in that line
+:%s/sbin/SBIN/g --> all occurences in the file
+
+Esc Mode
+===============
+u --> undo
+yy --> copy the line where you are
+p --> paste
+dd --> cut the line
+gg --> top of the file
+shift+g --> move to bottom of the file
+
+
+
+
